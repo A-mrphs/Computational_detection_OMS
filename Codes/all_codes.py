@@ -63,8 +63,8 @@ len(X_train)
 param_grid = {
   'max_depth':np.arange(10, 30),
   'n_estimators':np.arange(150, 200),
-  'min_sample_split':np.arange(1, 5),
-  'mean_sample_leaf':np.arange(1, 5),
+  'min_samples_split':np.arange(1, 5),
+  'min_samples_leaf':np.arange(1, 5),
 }
 
 rfc = RandomForestClassifier()
